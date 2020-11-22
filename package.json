@@ -1,0 +1,57 @@
+{
+  "name": "ran-ui",
+  "author": "Ruiannan",
+  "description": "Annan's personal component library",
+  "version": "0.0.1",
+  "private": false,
+  "main": "src/components/index.js",
+  "files": [
+    "styleguide",
+    "src/components"
+  ],
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/Ruiannan/ran-ui.git"
+  },
+  "keywords": ["ran","ui"],
+  "scripts": {
+    "styleguide": "vue-cli-service styleguidist",
+    "styleguide:build": "vue-cli-service styleguidist:build"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "nrm": "^1.2.1",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-styleguidist": "~4.33.10",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
