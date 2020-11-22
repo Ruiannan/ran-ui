@@ -1,24 +1,15 @@
-# vue-styleguidist
+# ran-vue-ui 组件库使用方式
 
-## Project setup
+## 导入包
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm i ran-vue-ui
 ```
 
-### Compiles and minifies for production
+### Vue项目的入口文件 main.js 中引入
 ```
-npm run build
+import CandiesButton from 'ran-vue-ui'
+import 'ran-vue-ui/lib/ranvueui.css'
+
+Vue.use(CandiesButton)
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
