@@ -1,7 +1,14 @@
 <template>
   <div id="app">
-    <candies-button candiesTpye="candies-1"
-                    @wolf="test">你是谁？</candies-button>
+
+    <!-- 滑盖登录页 -->
+    <slide-login>
+      <!-- 糖果按钮 -->
+      <candies-button slot="signin"
+                      class="btn"
+                      id="signIn"
+                      candiesTpye="candies-1">Sign In</candies-button>
+    </slide-login>
   </div>
 </template>
  
@@ -12,9 +19,6 @@ export default {
     return {}
   },
   methods: {
-    test (e) {
-      alert(e)
-    }
   }
 }
 </script>

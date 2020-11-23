@@ -1,7 +1,9 @@
 import CandiesButton from './base/CandiesButton'
+import SlideLogin from './base/SlideLogin'
 
 const components = [
-  CandiesButton
+  CandiesButton,
+  SlideLogin
 ]
 
 const install = function (Vue) {
@@ -23,5 +25,6 @@ export default {
   // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
   install,
   // 具体的组件列表
-  CandiesButton
+  CandiesButton,
+  SlideLogin
 }
