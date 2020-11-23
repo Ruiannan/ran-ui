@@ -4,7 +4,7 @@ button {
 .custom-btn {
   width: 130px;
   height: 40px;
-  color: #fff;
+  color: #000;
   border-radius: 50px;
   padding: 10px 25px;
   font-family: 'Lato', sans-serif;
@@ -15,54 +15,55 @@ button {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
-    inset -7px -7px 10px 0px rgba(0,0,0,.1),7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  text-shadow:  2px 2px 3px rgba(255,255,255,.5),
-              -4px -4px 6px rgba(116, 125, 136, .2);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    inset -7px -7px 10px 0px rgba(0, 0, 0, 0.1),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5),
+    -4px -4px 6px rgba(116, 125, 136, 0.2);
   outline: none;
 }
 
 /* 1 */
 .btn-1 {
-  color: rgba(0,3,255,.5);
+  color: rgba(0, 3, 255, 0.5);
   background-color: #b2d8ff;
   border: none;
 }
 .btn-1:hover {
-   color: rgba(0,3,255, .7);
-background: linear-gradient(0deg, rgba(0,3,255,.5) 0%, rgba(2,126,251,.5) 100%);
+  color: rgba(0, 3, 255, 0.7);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 3, 255, 0.5) 0%,
+    rgba(2, 126, 251, 0.5) 100%
+  );
 }
 
 /* 2 */
 .btn-2 {
   background-color: #e8d1ff;
-  color: rgba(96,9,240, .5);
+  color: rgba(96, 9, 240, 0.5);
   border: none;
-  
 }
 .btn-2:before {
   height: 0%;
   width: 2px;
 }
 .btn-2:hover {
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
-
 
 /* 3 */
 .btn-3 {
-  color: rgba(2,126,251,1);
-  background: rgba(118,174,241,1);
+  color: rgba(2, 126, 251, 1);
+  background: rgba(118, 174, 241, 1);
   width: 130px;
   height: 40px;
   line-height: 42px;
   padding: 0;
   border: none;
-  
 }
 .btn-3 span {
   position: relative;
@@ -73,10 +74,10 @@ background: linear-gradient(0deg, rgba(0,3,255,.5) 0%, rgba(2,126,251,.5) 100%);
 .btn-3:before,
 .btn-3:after {
   position: absolute;
-  content: "";
+  content: '';
   right: 0;
   top: 0;
-   background: rgba(2,126,251,1);
+  background: rgba(2, 126, 251, 1);
   transition: all 0.3s ease;
 }
 .btn-3:before {
@@ -87,8 +88,8 @@ background: linear-gradient(0deg, rgba(0,3,255,.5) 0%, rgba(2,126,251,.5) 100%);
   width: 0%;
   height: 2px;
 }
-.btn-3:hover{
-   background: transparent;
+.btn-3:hover {
+  background: transparent;
   box-shadow: none;
 }
 .btn-3:hover:before {
@@ -97,16 +98,16 @@ background: linear-gradient(0deg, rgba(0,3,255,.5) 0%, rgba(2,126,251,.5) 100%);
 .btn-3:hover:after {
   width: 100%;
 }
-.btn-3 span:hover{
-   color: rgba(2,126,251,1);
+.btn-3 span:hover {
+  color: rgba(2, 126, 251, 1);
 }
 .btn-3 span:before,
 .btn-3 span:after {
   position: absolute;
-  content: "";
+  content: '';
   left: 0;
   bottom: 0;
-   background: rgba(2,126,251,1);
+  background: rgba(2, 126, 251, 1);
   transition: all 0.3s ease;
 }
 .btn-3 span:before {
@@ -127,17 +128,14 @@ background: linear-gradient(0deg, rgba(0,3,255,.5) 0%, rgba(2,126,251,.5) 100%);
 /* 4 */
 .btn-4 {
   color: #03c8a8;
-background: #96e4df;
+  background: #96e4df;
   line-height: 42px;
   padding: 0;
   border: none;
 }
-.btn-4:hover{
+.btn-4:hover {
   background-color: #89d8d3;
-
 }
-
-
 
 /* 5 */
 .btn-5 {
@@ -148,40 +146,37 @@ background: #96e4df;
 .btn-5:hover {
   color: #f0094a;
   background: transparent;
-   box-shadow:none;
+  box-shadow: none;
 }
 .btn-5:before,
-.btn-5:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
+.btn-5:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
   background: #f0094a;
-  box-shadow:
-   -1px -1px 5px 0px #fff,
-   7px 7px 20px 0px #0003,
-   4px 4px 5px 0px #0002;
-  transition:400ms ease all;
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
 }
-.btn-5:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
+.btn-5:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
 }
 .btn-5:hover:before,
-.btn-5:hover:after{
-  width:100%;
-  transition:800ms ease all;
+.btn-5:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
-
 
 /* 6 */
 .btn-6 {
-  color: rgba(234,76,137,1);
-  background: rgb(247,150,192);
+  color: rgba(234, 76, 137, 1);
+  background: rgb(247, 150, 192);
   line-height: 42px;
   padding: 0;
   border: none;
@@ -195,14 +190,12 @@ background: #96e4df;
 .btn-6:before,
 .btn-6:after {
   position: absolute;
-  content: "";
+  content: '';
   height: 0%;
   width: 1px;
- box-shadow:
-   -1px -1px 20px 0px rgba(255,255,255,1),
-   -4px -4px 5px 0px rgba(255,255,255,1),
-   7px 7px 20px 0px rgba(0,0,0,.4),
-   4px 4px 5px 0px rgba(0,0,0,.3);
+  box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+    -4px -4px 5px 0px rgba(255, 255, 255, 1),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
 }
 .btn-6:before {
   right: 0;
@@ -214,7 +207,7 @@ background: #96e4df;
   bottom: 0;
   transition: all 500ms ease;
 }
-.btn-6:hover{
+.btn-6:hover {
   background: transparent;
   color: #76aef1;
   box-shadow: none;
@@ -230,25 +223,23 @@ background: #96e4df;
 .btn-6 span:before,
 .btn-6 span:after {
   position: absolute;
-  content: "";
-  box-shadow:
-   -1px -1px 20px 0px rgba(255,255,255,1),
-   -4px -4px 5px 0px rgba(255,255,255,1),
-   7px 7px 20px 0px rgba(0,0,0,.4),
-   4px 4px 5px 0px rgba(0,0,0,.3);
+  content: '';
+  box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+    -4px -4px 5px 0px rgba(255, 255, 255, 1),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
 }
 .btn-6 span:before {
   left: 0;
   top: 0;
   width: 0%;
-  height: .5px;
+  height: 0.5px;
   transition: all 500ms ease;
 }
 .btn-6 span:after {
   right: 0;
   bottom: 0;
   width: 0%;
-  height: .5px;
+  height: 0.5px;
   transition: all 500ms ease;
 }
 .btn-6 span:hover:before {
@@ -260,7 +251,7 @@ background: #96e4df;
 
 /* 7 */
 .btn-7 {
-background: #ffbf7f;
+  background: #ffbf7f;
   line-height: 42px;
   color: darkorange;
   padding: 0;
@@ -275,27 +266,25 @@ background: #ffbf7f;
 .btn-7:before,
 .btn-7:after {
   position: absolute;
-  content: "";
+  content: '';
   right: 0;
   bottom: 0;
-  background: rgba(251,75,2,1);
-  box-shadow:
-   -7px -7px 20px 0px rgba(255,255,255,.9),
-   -4px -4px 5px 0px rgba(255,255,255,.9),
-   7px 7px 20px 0px rgba(0,0,0,.2),
-   4px 4px 5px 0px rgba(0,0,0,.3);
+  background: rgba(251, 75, 2, 1);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
-.btn-7:before{
-   height: 0%;
-   width: 2px;
+.btn-7:before {
+  height: 0%;
+  width: 2px;
 }
 .btn-7:after {
   width: 0%;
   height: 2px;
 }
-.btn-7:hover{
-  color: rgba(251,75,2,1);
+.btn-7:hover {
+  color: rgba(251, 75, 2, 1);
   background: transparent;
 }
 .btn-7:hover:before {
@@ -307,15 +296,13 @@ background: #ffbf7f;
 .btn-7 span:before,
 .btn-7 span:after {
   position: absolute;
-  content: "";
+  content: '';
   left: 0;
   top: 0;
-  background: rgba(251,75,2,1);
-  box-shadow:
-   -7px -7px 20px 0px rgba(255,255,255,.9),
-   -4px -4px 5px 0px rgba(255,255,255,.9),
-   7px 7px 20px 0px rgba(0,0,0,.2),
-   4px 4px 5px 0px rgba(0,0,0,.3);
+  background: rgba(251, 75, 2, 1);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 .btn-7 span:before {
@@ -336,7 +323,7 @@ background: #ffbf7f;
 /* 8 */
 .btn-8 {
   background-color: #d9d0f5;
-   color: #c797eb;
+  color: #c797eb;
   line-height: 42px;
   padding: 0;
   border: none;
@@ -350,15 +337,15 @@ background: #ffbf7f;
 .btn-8:before,
 .btn-8:after {
   position: absolute;
-  content: "";
+  content: '';
   right: 0;
   bottom: 0;
   background: #c797eb;
   transition: all 0.3s ease;
 }
-.btn-8:before{
-   height: 0%;
-   width: 2px;
+.btn-8:before {
+  height: 0%;
+  width: 2px;
 }
 .btn-8:after {
   width: 0%;
@@ -370,16 +357,16 @@ background: #ffbf7f;
 .btn-8:hover:after {
   width: 100%;
 }
-.btn-8:hover{
+.btn-8:hover {
   background: transparent;
 }
-.btn-8 span:hover{
+.btn-8 span:hover {
   color: #c797eb;
 }
 .btn-8 span:before,
 .btn-8 span:after {
   position: absolute;
-  content: "";
+  content: '';
   left: 0;
   top: 0;
   background: #c797eb;
@@ -399,7 +386,6 @@ background: #ffbf7f;
 .btn-8 span:hover:after {
   width: 100%;
 }
-  
 
 /* 9 */
 .btn-9 {
@@ -411,7 +397,7 @@ background: #ffbf7f;
 }
 .btn-9:after {
   position: absolute;
-  content: " ";
+  content: ' ';
   z-index: -1;
   top: 0;
   left: 0;
@@ -422,21 +408,20 @@ background: #ffbf7f;
 }
 .btn-9:hover {
   background: transparent;
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
   color: #fff;
 }
 .btn-9:hover:after {
   -webkit-transform: scale(2) rotate(180deg);
   transform: scale(2) rotate(180deg);
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
 }
-
 /* 10 */
 .btn-10 {
   background: lightblue;
@@ -447,15 +432,15 @@ background: #ffbf7f;
 }
 .btn-10:after {
   position: absolute;
-  content: " ";
+  content: ' ';
   top: 0;
   left: 0;
   z-index: -1;
   width: 100%;
   height: 100%;
   transition: all 0.3s ease;
-  -webkit-transform: scale(.1);
-  transform: scale(.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
 }
 .btn-10:hover {
   color: #fff;
@@ -471,52 +456,64 @@ background: #ffbf7f;
 /* 11 */
 .btn-11 {
   border: none;
-  background: rgb(251,33,117);
-    background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+  background: rgb(251, 33, 117);
+  background: linear-gradient(
+    0deg,
+    rgba(251, 33, 117, 1) 0%,
+    rgba(234, 76, 137, 1) 100%
+  );
   background: #f7d0f5;
-    color: rgba(251,33,117,.5);
-    overflow: hidden;
+  color: rgba(251, 33, 117, 0.5);
+  overflow: hidden;
 }
 .btn-11:hover {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
 }
 .btn-11:before {
-    position: absolute;
-    content: '';
-    display: inline-block;
-    top: -180px;
-    left: 0;
-    width: 30px;
-    height: 100%;
-    background-color: #fff;
-    animation: shiny-btn1 3s ease-in-out infinite;
+  position: absolute;
+  content: '';
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn1 3s ease-in-out infinite;
 }
-.btn-11:hover{
-  opacity: .7;
+.btn-11:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
-.btn-11:active{
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
-}
-
 
 @-webkit-keyframes shiny-btn1 {
-    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
-    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
-    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
-    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
 }
 
-
 /* 12 */
-.btn-12{
+.btn-12 {
   position: relative;
   right: 20px;
   bottom: 20px;
-  border:none;
+  border: none;
   box-shadow: none;
   width: 130px;
   height: 40px;
@@ -531,24 +528,20 @@ background: #ffbf7f;
   position: absolute;
   width: 130px;
   height: 40px;
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
-  margin:0;
+  margin: 0;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .btn-12 span:nth-child(1) {
-  box-shadow:
-   -7px -7px 20px 0px #fff9,
-   -4px -4px 5px 0px #fff9,
-   7px 7px 20px 0px #0002,
-   4px 4px 5px 0px #0001;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
   -webkit-transform: rotateX(90deg);
   -moz-transform: rotateX(90deg);
   transform: rotateX(90deg);
@@ -565,15 +558,14 @@ background: #ffbf7f;
   transform-origin: 50% 50% -20px;
 }
 .btn-12:hover span:nth-child(1) {
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
   transform: rotateX(0deg);
 }
 .btn-12:hover span:nth-child(2) {
- background: transparent;
+  background: transparent;
   color: transparent;
   box-shadow: none;
   text-shadow: none;
@@ -581,7 +573,6 @@ background: #ffbf7f;
   -moz-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
-
 
 /* 13 */
 .btn-13 {
@@ -592,21 +583,20 @@ background: #ffbf7f;
 }
 .btn-13:after {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 0;
   bottom: 0;
   left: 0;
   z-index: -1;
   border-radius: 50px;
-   background-color: #4dccc6;
-background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-    inset -7px -7px 10px 0px rgba(0,0,0,.1),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
-              -4px -4px 6px rgba(116, 125, 136, .2);
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    inset -7px -7px 10px 0px rgba(0, 0, 0, 0.1),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.3),
+    -4px -4px 6px rgba(116, 125, 136, 0.2);
   transition: all 0.3s ease;
 }
 /* .btn-13:hover {
@@ -620,7 +610,6 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
   top: 2px;
 }
 
-
 /* 14 */
 .btn-14 {
   background: #ffff9e;
@@ -630,7 +619,7 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
 }
 .btn-14:after {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 0;
   top: 0;
@@ -638,12 +627,11 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
   z-index: -1;
   border-radius: 50px;
   background-color: #ffff8a;
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-    inset -7px -7px 10px 0px rgba(0,0,0,.1),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
-              -4px -4px 6px rgba(116, 125, 136, .2);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    inset -7px -7px 10px 0px rgba(0, 0, 0, 0.1),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.3),
+    -4px -4px 6px rgba(116, 125, 136, 0.2);
   transition: all 0.3s ease;
 }
 .btn-14:hover {
@@ -667,7 +655,7 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
 }
 .btn-15:after {
   position: absolute;
-  content: "";
+  content: '';
   width: 0;
   height: 100%;
   top: 0;
@@ -675,9 +663,8 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
   z-index: -1;
   background-color: #7f7fff;
   border-radius: 50px;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 .btn-15:hover {
@@ -691,7 +678,6 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
   top: 2px;
 }
 
-
 /* 16 */
 .btn-16 {
   border: none;
@@ -699,7 +685,7 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
 }
 .btn-16:after {
   position: absolute;
-  content: "";
+  content: '';
   width: 0;
   height: 100%;
   top: 0;
@@ -707,11 +693,8 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
   direction: rtl;
   z-index: -1;
   border-radius: 50px;
-  box-shadow:
-   -7px -7px 20px 0px #fff9,
-   -4px -4px 5px 0px #fff9,
-   7px 7px 20px 0px #0002,
-   4px 4px 5px 0px #0001;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
   transition: all 0.3s ease;
 }
 .btn-16:hover {

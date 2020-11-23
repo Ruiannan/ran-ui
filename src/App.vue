@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <candies-button candiesTpye="candies-1">为啥呀</candies-button>
+    <candies-button candiesTpye="candies-1"
+                    @wolf="test">你是谁？</candies-button>
   </div>
 </template>
  
@@ -9,6 +10,11 @@
 export default {
   data () {
     return {}
+  },
+  methods: {
+    test (e) {
+      alert(e)
+    }
   }
 }
 </script>

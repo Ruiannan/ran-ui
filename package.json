@@ -6,7 +6,7 @@
   "main": "lib/ranvueui.umd.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "styleguide": "vue-cli-service styleguidist",
     "styleguide:build": "vue-cli-service styleguidist:build",
     "lib": "vue-cli-service build --target lib --name ranvueui --dest lib src/index.js"
